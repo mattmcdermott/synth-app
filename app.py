@@ -2,6 +2,7 @@ import dash
 from dash.dependencies import Input, Output, State
 import dash_html_components as html
 import dash_core_components as dcc
+import dash_table_experiments as dt
 import plotly.graph_objs as go
 import plotly.tools as tls
 import pymatgen
@@ -34,7 +35,7 @@ app.layout = html.Div([
         ], className ='row'),
 
     html.Div([
-        html.H5('Enter between 2 and 4 different elements/formulas separated by dashes:'),
+        html.H4('Enter between 2 and 4 different elements/formulas separated by dashes:'),
         dcc.Input(
             id = 'element-input',
             placeholder='Ex. Na-Cl',
@@ -49,7 +50,7 @@ app.layout = html.Div([
     
     html.Div([
         html.Div([
-            html.H5('Phase Diagram'),
+            html.H4('Phase Diagram'),
             dcc.Graph(id='phase-diagram', config={'displayModeBar':'hover','modeBarButtonsToRemove': ['sendDataToCloud','lasso2d','hoverCompareCartesian','hoverClosestCartesian','select2d'], 'displaylogo':False}),
             dcc.Checklist(id='pd-settings',
                 options=[{'label': 'Show unstable', 'value': 'unstableTrue'}], values=[])
@@ -94,24 +95,44 @@ app.layout = html.Div([
                 ], className='row')
             ], className='seven columns'),
         ], className='row', style={'margin-top':'15'}),
+
     html.Div([
+        html.H4("Compounds"),
+        html.Div([
+            dt.DataTable(
+                rows=[],
+                columns=["mp-id", "Formula", "Formation Energy (eV)", "E Above Hull (eV)"],
+                row_selectable=False,
+                filterable=True,
+                editable=False,
+                sortable=True,
+                selected_row_indices=[],
+                id='compounds-table'
+            )
+        ], className='ten columns')
+    ], className='row'),
+    html.Div([
+        html.P(),
         html.P('App created by ', style={'display':'inline'}),
         html.A("@mattmcdermott", href="http://perssongroup.lbl.gov/people.html", target="_blank"),
         html.P(),
         html.P('Phase diagram reference available ', style={'display':'inline'}),
         html.A("here", href="https://materialsproject.org/docs/phasediagram", target="_blank")
-        ], className = 'row'),
+        ], className = 'twelve columns'),
+
+    html.Div([], id='system-div')
 ], className='eleven columns offset-by-one')
 
 
 #################  Dash Callbacks  ##################
 
 # Create a new phase diagram using pymatgen's PDPlotter()
+
 @app.callback(
     Output('phase-diagram', 'figure'),
     [Input('enter-button', 'n_clicks'), Input('pd-settings','values')],
     [State('element-input','value')]
-    )
+)
 def update_phasediagram(nclicks, pdSettings, system):
     system = system.split("-")
     dim = len(system)
@@ -183,6 +204,25 @@ def update_phasediagram(nclicks, pdSettings, system):
     plotlyfig.add_trace(gen_plotly_markers(plotlyfig, plotter, pd))
 
     return plotlyfig
+
+@app.callback(
+    Output('compounds-table','rows'),
+    [Input('phase-diagram', 'figure')]
+)
+def update_table(figure):
+    rows =[]
+
+    for subentry in figure['data'][-1]['hovertext']:
+        mpid = re.search('\(([^)]+)', subentry).group(1)
+        mpid_info = mpr.get_entry_by_material_id(mpid)
+        formula = subentry.split()[0]
+        form_energy = round(mpid_info.energy_per_atom,3)
+        e_above_hull = round(float(subentry.split()[1].split('>')[-1]),3)
+
+        rows.append({'mp-id':mpid,'Formula':formula,'Formation Energy (eV)':form_energy,'E Above Hull (eV)':e_above_hull})
+
+    return rows
+
 
 # Create a new XRD plot using data from MAPI
 @app.callback(
