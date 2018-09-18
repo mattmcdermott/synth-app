@@ -13,7 +13,7 @@ import re
 from synth_app.layout.plot_functions import gen_plotly_layout, gen_plotly_markers
 from synth_app.layout.plot_layouts import xrd_layout, xas_layout
 
-mpr = MPRester(api_key='wXCKUyrifEMr3rFyzGk') # establish API rester for retrieving Materials Project data
+mpr = MPRester(api_key='') # establish API rester for retrieving Materials Project data
 
 app = dash.Dash('synth-app') # create Dash app
 app.title = "Synthesis App"
