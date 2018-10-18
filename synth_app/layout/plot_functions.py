@@ -1,9 +1,6 @@
-import pymatgen
-import dash
 import plotly.graph_objs as go
-from pymatgen.analysis.phase_diagram import PhaseDiagram
-from pymatgen.analysis.phase_diagram import PDPlotter
 from synth_app.layout.plot_layouts import layout_2d, layout_3d, layout_4d
+
 # Plotly layout functions
 
 def gen_plotly_layout(plot, plotter, pd):
@@ -16,18 +13,27 @@ def gen_plotly_layout(plot, plotter, pd):
         for entry in plotter.pd_plot_data[1]:
             x, y = entry[0], entry[1]
 
+            formula = list(plotter.pd_plot_data[1][entry].composition.reduced_formula)
+            text = []
+            for char in formula:
+                if char.isdigit():
+                    text.append("<sub>" + char + "</sub>")
+                else:
+                    text.append(char)
+            clean_formula = ""
+            clean_formula = clean_formula.join(text)
+
             new_annotation = {'align': 'center',
                                     'font': {'color': '#000000', 'size': 20.0},
                                     'opacity': 1,
                                     'showarrow': False,
-                                    'text': plotter.pd_plot_data[1][entry].composition.reduced_formula + "  ",
+                                    'text': clean_formula + "  ",
                                     'x': x,
                                     'xanchor': 'right',
                                     'yanchor': 'auto',
                                     'xref': 'x',
                                     'y': y,
                                     'yref': 'y'}
-            new_hover = {}
 
             annotations_list.append(new_annotation)
 
@@ -41,11 +47,21 @@ def gen_plotly_layout(plot, plotter, pd):
         for entry in plotter.pd_plot_data[1]:
             x, y = entry[0], entry[1]
 
+            formula = list(plotter.pd_plot_data[1][entry].composition.reduced_formula)
+            text = []
+            for char in formula:
+                if char.isdigit():
+                    text.append("<sub>" + char + "</sub>")
+                else:
+                    text.append(char)
+            clean_formula = ""
+            clean_formula = clean_formula.join(text)
+
             new_annotation = {'align': 'center',
                                     'font': {'color': '#000000', 'size': 18.0},
                                     'opacity': 1,
                                     'showarrow': False,
-                                    'text': plotter.pd_plot_data[1][entry].composition.reduced_formula,
+                                    'text': clean_formula + "  ",
                                     'x': x,
                                     'xanchor': 'right',
                                     'yanchor': 'top',
@@ -65,11 +81,21 @@ def gen_plotly_layout(plot, plotter, pd):
         for entry in plotter.pd_plot_data[1]:
             x, y, z = entry[0], entry[1], entry[2]
 
+            formula = list(plotter.pd_plot_data[1][entry].composition.reduced_formula)
+            text = []
+            for char in formula:
+                if char.isdigit():
+                    text.append("<sub>" + char + "</sub>")
+                else:
+                    text.append(char)
+            clean_formula = ""
+            clean_formula = clean_formula.join(text)
+
             new_annotation = {'align': 'center',
                                     'font': {'color': '#000000', 'size': 18.0},
                                     'opacity': 1,
                                     'showarrow': False,
-                                    'text': plotter.pd_plot_data[1][entry].composition.reduced_formula,
+                                    'text': clean_formula,
                                     'x': x,
                                     'y': y,
                                     'z': z,
@@ -128,26 +154,37 @@ def gen_plotly_markers(plot, plotter, pd):
     dim = pd.dim
 
     for entry in plotter.pd_plot_data[1]:
-        energy = pd.get_form_energy_per_atom(plotter.pd_plot_data[1][entry])
+        energy = round(pd.get_form_energy_per_atom(plotter.pd_plot_data[1][entry]),3)
         mpid = plotter.pd_plot_data[1][entry].entry_id
-        formula = plotter.pd_plot_data[1][entry].composition.reduced_formula 
+        formula = plotter.pd_plot_data[1][entry].composition.reduced_formula
+        s = []
+        for char in formula:
+            if char.isdigit():
+                s.append("<sub>" + char + "</sub>")
+            else:
+                s.append(char)
+        clean_formula = ""
+        clean_formula = clean_formula.join(s)
+
         x_list.append(entry[0])
         y_list.append(entry[1])
         if dim==4:
             z_list.append(entry[2])
-        text.append(formula + ' (' + mpid + ')' + '<br>' + str(energy) + ' eV')
+        text.append(clean_formula + ' (' + mpid + ')' + '<br>' + str(energy) + ' eV')
 
         if dim==2 or dim==3:
             markerPlot = go.Scatter(
                 x = x_list,
                 y = y_list,
                 mode = 'markers',
+                name = 'Stable',
                 marker = dict(
                     color = '#0562AB',
-                    size = 14
+                    size = 11
                     ),
                 hoverinfo = 'text',
-                hoverlabel = dict(font = dict(size = 16)),
+                hoverlabel = dict(font = dict(size = 14)),
+                showlegend=True,
                 hovertext = text)
         if dim==4:
              markerPlot = go.Scatter3d(
@@ -155,12 +192,13 @@ def gen_plotly_markers(plot, plotter, pd):
                 y = y_list,
                 z = z_list,
                 mode = 'markers',
+                name = 'Stable',
                 marker = dict(
                     color = '#0562AB',
-                    size = 10
+                    size = 8
                     ),
                 hoverinfo = 'text',
-                hoverlabel = dict(font = dict(size = 16)),
+                hoverlabel = dict(font = dict(size = 14)),
                 hovertext = text)
     
     return markerPlot

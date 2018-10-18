@@ -1,5 +1,6 @@
 # Plotly layout settings
 
+# Phase Diagrams - 2D/3D/4D - Plot Layout
 layout_2d = dict(
     xaxis={'title': 'Fraction',
                 'anchor': 'y',
@@ -33,10 +34,11 @@ layout_2d = dict(
                 'zeroline': False},
 
     autosize = True,
-    height = 450,
+    height = 550,
     hovermode = 'closest',
-    showlegend = False,
-    margin = dict(l=80, b=60, t=30,r=20))
+    showlegend = True,
+    legend = dict(orientation = 'h',traceorder='reversed',x=1.0, y=1.08, xanchor='right', tracegroupgap = 5),
+    margin = dict(l=80, b=70, t=10,r=20))
 
 layout_3d = dict(
     xaxis=dict(
@@ -60,17 +62,20 @@ layout_3d = dict(
     height = 450,
     hovermode = 'closest',
     margin = dict(b=30, l=30, pad=0, t=0,r=20),
-    showlegend = False)
+    showlegend = True,
+    legend=dict(orientation='h', traceorder='reversed', x=1.0, y=1.08, xanchor='right', tracegroupgap=5))
 
 layout_4d = dict(
     autosize = True,
     height = 450,
     hovermode = 'closest',
     margin = dict(b=30, l=30, pad=0, t=0,r=20),
-    showlegend = False)
+    showlegend = True,
+    legend = dict(orientation = 'h',traceorder='reversed',x=1.0, y=1.08, xanchor='right', tracegroupgap = 5))
 
+# X-Ray Diffraction - Plot Layout
 xrd_layout = dict(
-    xaxis={'title': "2" + u"\u03B8",
+    xaxis={'title': "2" + u"\u03B8" + " (deg)",
                 'anchor': 'y',
                 'automargin': True,
                 'mirror': 'ticks',
@@ -104,6 +109,7 @@ xrd_layout = dict(
     showlegend = False,
     margin = dict(l=80, b=50, t=60, pad=0,r=30))
 
+#X-ray Absoprtion Spectrum - Plot Layout
 xas_layout = dict(
     xaxis={'title': 'Energy (eV)',
                 'anchor': 'y',
