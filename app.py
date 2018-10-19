@@ -22,6 +22,8 @@ mpr = MPRester() # establish API rester for retrieving Materials Project data
 app = dash.Dash('synth-app') # create Dash app
 app.title = "Synthesis App"
 
+server = app.server
+
 # configure cache using flask_caching
 cache = Cache(app.server, config={
      'CACHE_TYPE': 'filesystem',
