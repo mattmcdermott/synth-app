@@ -5,8 +5,8 @@
 # all PyCharm settings
 .idea/
 
-# auto-generated caches on first run
-crystal_toolkit/*_cache.json
+# caching
+cache-directory
 
 # staging area
 staging/
