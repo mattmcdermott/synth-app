@@ -1,5 +1,5 @@
 import plotly.graph_objs as go
-from synth_app.layout.plot_layouts import layout_2d, layout_3d, layout_4d
+from synthesis_app.layout.plot_layouts import layout_2d, layout_3d, layout_4d
 
 # Plotly layout functions
 

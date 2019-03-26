@@ -10,8 +10,8 @@ from pymatgen.analysis.phase_diagram import PDPlotter
 from pymatgen import MPRester
 from flask_caching import Cache
 import re
-from synth_app.layout.plot_functions import gen_plotly_layout, gen_plotly_markers
-from synth_app.layout.plot_layouts import xrd_layout, xas_layout
+from synthesis_app.layout.plot_functions import gen_plotly_layout, gen_plotly_markers
+from synthesis_app.layout.plot_layouts import xrd_layout, xas_layout
 
 # Author: Matthew McDermott
 # Date: October 18, 2018
