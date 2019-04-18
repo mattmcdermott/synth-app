@@ -1,9 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d460c97-0760-4488-83a5-4644cb660c3b" name="Default Changelist" comment="">
+    <list default="true" id="5d460c97-0760-4488-83a5-4644cb660c3b" name="Default Changelist" comment="Added caching support, subscripts on formulas, E above hull data, and overall improved usability.">
+      <change afterPath="$PROJECT_DIR$/synthesis_app/components/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/synth-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/synth-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache-directory/2029240f6d1128be89ddc32729463129" beforeDir="false" afterPath="$PROJECT_DIR$/cache-directory/2029240f6d1128be89ddc32729463129" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/00cf94d5e4d32198b1dad4a48ad886dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/01581c8bea9d3d36f003d6353d0bbfb4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/034f2696ba35d297359b9b79cd660bab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/05a9d8192f73f127c992daf9308877a1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/05d9ca406184d0c0cbc60383d7917cfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/05fa2b12e491cc5bde89f49ab2768e3c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/0663f88c780c0c0049dda8f08bb79169" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/06a06ea5df0ac2af6e75cbb1f446d8c1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/074d23bf12453e0de98f8e0222097ebd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/0a408ac6da5c511378ecca609151b121" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/0b9e4d53eeae2bd523315e8731c0ffca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/0baabd71d0a7652551fa07e5f1b40ba2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/0cb79b4af48513179ca348e22484567a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/0e5f4867e9203752b6155e5646787f5e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/0fc1ca1a91091d93388a25e83d7a1121" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/129d9e01fd1dfbef3006a971bbc516fb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/1332d5b47d413933d890f716227765ea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/13d805cb9ff6e9593782e6aa3f4e6b68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/15491b75563867f7b5afb3d54577c649" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/1579f4bd56b145e9c3011483cae8c1e5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/15d34a1e0f61ec94b48881bce039c780" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/19202a4eb3bf425ac47baeba42ac9308" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/1adfc05b005fd5ea9d768065adc4f219" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/1b7ede6a8385102dc723282b9996a10c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/1ba8d87208350af703d4a4e05fe8968b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/1bddf33f0429237f6ccf30b5467b0827" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/1c29274526769eff96ee1ba89071459d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/1f472d0fbff492ca4592af52d5c8f49a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/2009efe6b9d593191e9860cd2e840da0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/201a251154290063dbfaf4919db95077" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/2029240f6d1128be89ddc32729463129" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/20a1c5d345675a697fd7dabc0d0470f5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/218c1e3c106eb0ef7f420b204bb9798e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/228f1268579d77465cf537fd763eb912" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/2300672a2438e475f78113d63d55c80b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/23e3adee56c856f63053c700905b1a16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/264f5312b7633ac9b461f6507a492afc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/29c7bc0f798dad4d6ae2400b692f4cb2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/2a6af4089c456abae54a6ddfbc9f63b4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/2ada47f2203f09daa93695e17324eb8a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/303d8d02d5777e779be86922aa9211f7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/30cb69dfc0eed475eb2d45ca880dfc45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/316a84167f5a3c185373738efa4bfd20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/339559aa2968ebcde891d7ac55f54785" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/33a82110f24575017262afda68dd36d2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/34568c822630d8f2090bba9cafe28e96" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/349e1f3563081b3add6e792befb17236" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/353e7285427a40015e6e8f2672bf54d9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/3676ba0b10bcd59cfa3a1c402613f476" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/36e40220f45b2833758100a5436a7dc4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/394955167d17921850a2700350ff4472" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/3a2cdc8a94ec5f761128ca73b9e651ee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/3a7d3c7682cca7fc6522378942131371" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/3abefe7884e695965f1a24863324fa17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/3d03c10e92967db8a906f40332d130dd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/3d614251fea5610850868b7ecc9a408b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/3ee24e325c2ee55668c85e33708fa2f5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/3f09e7e4c9683644c73053e3efc3e61d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/3f78feaf3957b305a0a8d030053ae2ab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/41aa72db3696ad1751b66f3058300b45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/422e28e1508454d147c7ee4d450cbdc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/428b10cec20a78f7386b4aff69b86085" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/436ab6c4938cca364071f16cfcde6c08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/43ca11d21e2fe11f2fd8b568497bc796" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/4424033845ee04b2ffcb85dedeb73799" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/44a66d2036dd9e0326ed72e8cfeae9e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/451c8f975eecd0b04044e7de80a599d3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/45a8880275dec250ba2a315d94c33c5a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/46c4e764e97531a8d6a07414b8040a42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/46f6d5b04b242306ad62e24085ce7044" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/4702e086d14f8ba77023ffd8383b3370" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/49370e4665860258aa0c029bd978853c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/4a5a33047a198ad41465331810c8c1e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/4aa1ac0626cb44300603eea8083d6b02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/4b09e28dcc32b3047341e6c68e8c4760" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/4cc92d4e988cedf950cdc9478a1a62d3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/4eaccebda7e4878b01fcadaf528ce360" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/4f17054366477b074e2ea14016d0b7ff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/529841f580351d757204b30dc004b3d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/52a248183102b3a41daa73a66b49e1e8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/53d877dc9be388ee2869842627427127" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/53f6963e5a5d8f83c578dbedbf3740d0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/54591b90fade60e60c321731d09e2a69" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/54972314d62fcf3a0f545599c97d1a5d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/54e631b50b26857c77671ea3e1eab3a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/552948a69254c47f12d97ce7201804f7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/55703a9b53bde1de593692002f2197ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/55ba9091397a382594ea2682859bd937" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/569340b6e15ae0943fda535243a3b77d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/581cab67c16a5acd2fc3f7966ff67e38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/581cfd33044a8969e220afed4be0a7a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/584a5a408dc6107946532b1551ec6590" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/587232f62f455ff500644e09403211e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/588ead4c65c5ecb9c7a3f2dbab5abbe4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/5927e685b175e6bdeb8b4188ea4aead0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/5955c6ab09f837f02c8e9b8ef7d6356f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/5976ab8b12be0154d443d0da4048e9be" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/5a3a2723f148402c3a47227d50baec75" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/5a740dde6c22328168a6e10c819cdd17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/5bf74577e07a35b97de8b40f49fb08c7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/5c4ba9f59ee954c408141fe5f7fa93ab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/5de71d447d0a81100d5544d341a9a23d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/5dee8cc7a1a8091be3c762ac95ad64dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/60ac4d186f491a33a06aa20721b99379" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/68d207f75ec8da60bad9179cdb3dd1d0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/69ec4029d80d1f530f935e205752bbc5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/6e58fecc30d8afc8ae459fe858ef45a5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/6e88c9243131f75135971535125bf162" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/6ff1e4141bd9458025805b0368078fc5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/707f929e5b53c70661203a1828136500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/71e994690f802a3efa4f2bc65e3f39a3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/7213c0d781d35845720266803598f9d9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/74d2a8662bfa6db8c3491d8f1a64283d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/779136438b765cc632d4f3b1bef0106d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/7847f9f3b03328debddd8de836031c92" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/7b84eb49f9c98a56555ec7bc7101ae3a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/7bc699db6e0797b2e19eb6c2be2b0944" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/7c4429490b28079b43a9846247046de4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/7cb1d3f986ffba5cf7c664513639485b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/7d1c5082874eaf6581c2f31b1c71197d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/7d3cf57744dad594671807a5810cb732" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/7edde1f5b5dbd74c1b1e82e596c5c3b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/80374147929d8c5995e5ea5de1ac3ede" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/80c349608e73915a71dfe97004132210" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/813a702f9e0341d5afe30ef7ee53c2be" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/834ea8a9a3dc4ec7ede6183640c51a48" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/862a7d1519efffe8f15f4321b97797c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/8657b96eb8c7fa3a36300a10ea15073b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/876a9bc4b27cdd793f77a4dc11ffed4d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/8a80ccf557a02c5ba0bb0c335dd35153" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/8af3013440d8fb7493fd16f710e5bba2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/8b28f7531e4f72baa3094f1ff11f7d4e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/8c5e591be7ee13044a9ca6f12e3d2f85" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/8de5cd5ea0910a3acfca998fe9cfaf2f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/8f4e9801ab75749f0914aa302025df09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/9041807dfe5f6408a52253971a0129f4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/908085adf08169db774aaa86a290535b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/90a4682cb0f1730dbf4306ebd5f96db5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/92eba4e0bf20eccbb58ac5f40a5c4f6c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/96716ebadb9a977b7feb6eb9024ed5e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/98c3a9cab572199b7a1ef93c65e19d9f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/992aa3da9f5f6b42f3439c72dab2bfd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/9b22caff979e1792e8e23e208561ac4f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/9b4f02803c657bc649723428fee183ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/9b7ded5b3ff59dd954671409d88ef666" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/9f143400a7a7ee3dd8c64e7d562e8038" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/9f722176b11ff260bbd98608efaecfb1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/9feba1af7abb0777d371532a9a40b55e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/a02ca604c906b88a1fe5e5d2e4788527" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/a02d29100ebf71cf0613a7501c17aa41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/a129c04c9c162589756aefaeb7cdca52" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/a2e0fccee3b25dd991f5ae5e8959ffe7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/a4980604026c0da9cc90ff95a6a971bd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/a4a466f7cf46240003eac50bee5343c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/a4a9a2aecc82b80346db06e0eb77e97c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/a79c05c188355deedf730923c12b0f60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/a860b8e7b9ac14bb5ff5ea3abb0c6230" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ab5a87c53135f2e78ed6bcef25989dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ac023e0da454754513eaf2c3813f8912" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ad829f3c2fe5e1d3744806adc9bcc32e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ad96a980181330b44aa2c83a9750c9c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ae8574fde8bb701617d2eb5637c8a916" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/b049a4695d0924d63261d60cc13d76ef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/b055f2b94df78c4581c6159f7d805731" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/b1c7e1f56f56199ea763368da71a8e3e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/b45b7aa14aceae8c1b4073221502190e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/b5e79139ed06498f375647fb9917ba9c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ba89b62f81d9fce4737b3b381f165bd6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ba9ef075c4a9d9e14ab003c74a5a2557" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/baf6463a0e2269a705678443402bdd8f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/bb077da9abb9741cb544286de6dc1cce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/bb5b3571e41b34a723e06758ee17f754" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/bd688bdd9663b788577527b960eae2b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/bd7265192d599095c8b8ad670c0fff45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/bef9eb54f7a50ed107f9f18bb827e8c6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/c223e9c37ee37a9d04b8452a231a815f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/c2f6163022defa35627bf64a335eeb53" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/c56ca7b2047986452efea96e5a20e3cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/c6585096c7ce0b297456bd63bcef1004" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/c80a837f0972182c7e673003fa1ecbe2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/c937bd3968d2c376255c3ab7b6ea17a8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/c94e90cfc2764e33ac19368e05e33887" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/cb923164a7088e560abfd57351554507" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/cdf334f3810bd581e32824401a76aeee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ce76720b663705e780113e93452820cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ce8e0f332d80561f2fddc602b52d57ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ceed9d5acf19e28e9f808095ac668c74" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/cfad126379c9e5a79c91be86a0d1be17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/d1c4f1c700585c1c749ebc23417e7fa0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/d367a602b86a5864d3f3dd1d297e60e5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/d36d21d109506e3cf6cf13017a400835" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/d415575fdfc2f1964f55dfe4c17e3db7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/d43808d8698a997f8a89ece5d34db4db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/da58b00127d0c618e94c263a2086a477" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/da9325fae6dd8864238191afda7ba650" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/dbf9333c5301206ca1225a9da3f934ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/dd120052f156c8e12a4a2ef72d330880" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/de6c10451e224a92cbda170801156b4f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/df2b54cf367a864108a7b7361da99482" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/dfbd013fe72fdd9cc30d418aac5d67de" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e069fcda42a0c0efb01cecaada2abe4f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e0abc9806fae910eb7cb45714b6de253" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e13b9883c5d14554c5c299d29708dc06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e22bf314bce70808c6758810a515bb9f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e2fdc553f7d905e409a220e45429feb7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e3b41328c954e05164ecbb523fa790b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e3e7ee6ee9d06acb64117de5cb471660" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e4a21d1cfd16ced0d51c23d9d8acafb8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e4cf1625b1e6550b340b1c05387425ef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e59f1c870d12d1b8023454ec5a98f751" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e5ce342cfa502621c903c5531ac727a7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e6201ccfcf707f09f43e7993884f7e7d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e68ae7df2660dad4d59266d6593b6777" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e74253240b1bed3f4637eb54ed7dfb8f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e7d139c19f01c8b8bb7458045df1edf9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e9089af9b1afb7c6824c33d98086d708" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ecc2bae427ba1ce9cf22d830f522224f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ece7c592640d105c9a7457f1decc6094" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ed4a9815e8fb377b7ea8da2fbb2471a9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f0b97b2d7e1bb6246f9884a1cc9e90bc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f0f82524e9d801ca70eefbc8323a1b87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f1a23044d7620a6e834f086c1c018aae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f23bd6b4873e9c9f98acdbaf2602c669" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f2d8fcd68e721de9ef9a8f7ac6b1d903" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f33f6c3df1734fbc8293458d6631ee92" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f3adb31a602ac6115642bfab255e3ba5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f43f270517992e572de4c1141d34adb8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f44bc44c15d713a31b413f8649225ed3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f485aa5b7f5ef46a74cdab425f44e3eb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f54dc56ad0b0483ce969b42cc2e5235d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f586796c8ff14d88222925f049c75321" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f598611808d779d99a2a6dfdb1a9fec5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/f6484b34e53182be297f42b619b23411" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/fa770e8f763ee5119667bffe397db5e2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/fd16bfc6668020f948a0f0edb01236e9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/fd3629b4dc622ca0e836b8c0e30d1485" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/fd5a97a550cb722884c0ae69359fc23b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/fdcdbeb1b5af0f37e4ad9a2e8750edfb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ff6241017c8f1190a5add9bb8b755d73" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ff690b50ca56aa9e502986a23b62568a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/ff8420567a208c040dbffd4b19504e68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synthesis_app/layout/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/synthesis_app/components/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synthesis_app/layout/plot_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synthesis_app/layout/plot_layouts.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,17 +313,108 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="419012071">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Procfile" value="2" />
+          <entry key="gitignore" value="1" />
+          <entry key="md" value="1" />
+          <entry key="py" value="11" />
+          <entry key="txt" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Python" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="md" value="664" />
+          <entry key="py" value="5513" />
+          <entry key="txt" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Markdown" value="664" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="5513" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="153" column="38" selection-start-line="153" selection-start-column="38" selection-end-line="153" selection-end-column="38" />
+            <state relative-caret-position="237">
+              <caret line="343" column="15" lean-forward="true" selection-start-line="343" selection-start-column="15" selection-end-line="343" selection-end-column="15" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+                <marker date="1555560364042" expanded="true" signature="10258:10259" ph="..." />
+                <marker date="1555560364042" expanded="true" signature="10470:10471" ph="..." />
+                <marker date="1555560364042" expanded="true" signature="11554:11555" ph="..." />
+                <marker date="1555560364042" expanded="true" signature="11692:11693" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="24" selection-start-column="24" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/synthesis_app/components/search.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-604">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <marker date="1555560246371" expanded="true" signature="497:498" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="18">
+                <caret line="1" column="138" selection-start-line="1" selection-start-column="138" selection-end-line="1" selection-end-column="138" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="738">
+              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -81,39 +422,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="378">
+              <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/synth_app/layout/plot_layouts.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1728">
-              <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/synth_app/layout/plot_functions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3024">
-              <caret line="169" column="23" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/synth_app/layout/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -126,6 +448,12 @@
       <find>align</find>
       <find>unstable_entrylist</find>
       <find>index</find>
+      <find>DEBUG_MODE</find>
+      <find>ENABLE_API</find>
+      <find>upload</find>
+      <find>MPCo</find>
+      <find>input</find>
+      <find>phased</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,21 +465,24 @@
       <list>
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/app2.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/synth_app/layout/plot_layouts.py" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/synth_app/.gitignore" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/synth_app/layout/plot_functions.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/LICENSE.txt" />
+        <option value="$PROJECT_DIR$/synthesis_app/search.py" />
+        <option value="$PROJECT_DIR$/synthesis_app/components/search.py" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="522" />
-    <option name="y" value="23" />
-    <option name="width" value="1352" />
-    <option name="height" value="948" />
+    <option name="x" value="195" />
+    <option name="y" value="32" />
+    <option name="width" value="1276" />
+    <option name="height" value="956" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -163,19 +494,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="synth-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="synth-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="synth-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="synth-app" type="462c0819:PsiDirectoryNode" />
-              <item name="synth_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="synth-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="synth-app" type="462c0819:PsiDirectoryNode" />
-              <item name="synth_app" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="synthesis-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="synthesis-app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -185,9 +505,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/synthesis_app/components" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -236,9 +558,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="142" y="71" width="1352" height="948" extended-state="0" />
+    <frame x="195" y="32" width="1276" height="956" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21111946" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22948207" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -249,7 +572,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.51915854" visible="true" weight="0.30490655" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.51915854" visible="true" weight="0.30092594" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48084146" side_tool="true" weight="0.30490655" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3287827" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -268,32 +591,67 @@
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
     <entry file="file://$PROJECT_DIR$/app2.py" />
-    <entry file="file://$PROJECT_DIR$/synth_app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="108">
-            <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/synth_app/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/synth_app/layout/plot_layouts.py" />
+    <entry file="file://$PROJECT_DIR$/synth_app/layout/plot_functions.py" />
+    <entry file="file://$PROJECT_DIR$/synth_app/layout/__init__.py" />
+    <entry file="file://$USER_HOME$/miniconda3/envs/synth/lib/python3.7/site-packages/crystal_toolkit/helpers/layouts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="36">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/synthesis_app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synthesis_app/components/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/miniconda3/envs/synth/lib/python3.7/site-packages/dash/development/base_component.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        <state relative-caret-position="192">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/miniconda3/envs/synth/lib/python3.7/site-packages/crystal_toolkit/components/phase_diagram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/miniconda3/envs/synth/lib/python3.7/site-packages/pymatgen/analysis/graphs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1515" selection-start-line="1515" selection-end-line="1515" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synthesis_app/layout/plot_layouts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2224" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synthesis_app/layout/plot_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synthesis_app/layout/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
@@ -302,42 +660,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="18">
+            <caret line="1" column="138" selection-start-line="1" selection-start-column="138" selection-end-line="1" selection-end-column="138" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synthesis_app/components/search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="153" column="38" selection-start-line="153" selection-start-column="38" selection-end-line="153" selection-end-column="38" />
+        <state relative-caret-position="-604">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1555560246371" expanded="true" signature="497:498" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="378">
+          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/synth_app/layout/plot_layouts.py">
+    <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/synth_app/layout/plot_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3024">
-          <caret line="169" column="23" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="23" />
+        <state relative-caret-position="237">
+          <caret line="343" column="15" lean-forward="true" selection-start-line="343" selection-start-column="15" selection-end-line="343" selection-end-column="15" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1555560364042" expanded="true" signature="10258:10259" ph="..." />
+            <marker date="1555560364042" expanded="true" signature="10470:10471" ph="..." />
+            <marker date="1555560364042" expanded="true" signature="11554:11555" ph="..." />
+            <marker date="1555560364042" expanded="true" signature="11692:11693" ph="..." />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/synth_app/layout/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

@@ -1,7 +1,10 @@
-# synth-app
-The Synthesis App is an application for interacting with Materials Project data relevant to materials synthesis.
+# Synthesis App
+## The Synthesis App is an interactive Plotly Dash application for predicting/analyzing phase stability in the synthesis of new materials.
 
-Author: Matthew McDermott
-Date: October 2018
+Synthesis App is powered by data from the Materials Project and interactive Dash components in Crystal Toolkit.
 
-Synthesis App is made using Plotly Dash.
+The code is maintained by Matthew McDermott (mcdermott@lbl.gov).
+
+
+
+
