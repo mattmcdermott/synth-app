@@ -100,21 +100,26 @@ struct_component = ctc.StructureMoleculeComponent()
 struct_component.default_title = "Structure Viewer"
 search_component = ctc.SearchComponent()
 chemsys_search_component = ChemsysSearchComponent()
+literature_component = ctc.LiteratureComponent(origin_component=struct_component)
 xrd_component = ctc.XRayDiffractionPanelComponent(origin_component=struct_component)
+xas_component = ctc.XASPanelComponent(origin_component=search_component)
 pd_component = ctc.PhaseDiagramComponent()
-pd_component.attach_from(chemsys_search_component, this_store_name="chemsys")
+pd_component.attach_from(chemsys_search_component, this_store_name="chemsys-external")
 
 panels = [
     xrd_component,
+    xas_component,
+    literature_component
 ]
 
 body_layout = [
-    html.Div([panel.panel_layout for panel in panels], id="panels"),
     Reveal(
         [pd_component.all_layouts["table"]],
         title="Phase Diagram Entries",
         id="pd-entries",
+        open=True,
     ),
+    html.Div([panel.panel_layout for panel in panels], id="panels"),
 ]
 
 STRUCT_VIEWER_SOURCE = struct_component.id()
