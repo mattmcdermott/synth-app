@@ -20,7 +20,6 @@ import os
 import logging
 from urllib import parse
 from random import choice
-
 from uuid import uuid4
 from ast import literal_eval
 
@@ -42,7 +41,8 @@ meta_tags = [
     }
 ]
 
-app = dash.Dash(__name__, meta_tags=meta_tags, external_stylesheets=[BULMA_CSS['external_url'],
+app = dash.Dash(__name__, meta_tags=meta_tags, url_base_pathname="/genesis/", assets_url_path="/genesis",
+                external_stylesheets=[BULMA_CSS['external_url'],
                                                                      FONT_AWESOME_CSS[
                                                                          'external_url']])  # create Dash app
 app.title = "Synthesis App"
@@ -52,7 +52,7 @@ app.server.secret_key = str(uuid4())
 
 server = app.server
 
-DEBUG_MODE = literal_eval(os.environ.get("SYNTHESIS_APP_DEBUG_MODE", "True").title())
+DEBUG_MODE = literal_eval(os.environ.get("CRYSTAL_TOOLKIT_DEBUG_MODE", "False").title())
 
 ################################################################################
 # region SET UP CACHE
@@ -293,10 +293,10 @@ def update_search_term_on_page_load(href):
     pathname = str(parse.urlparse(href).path).split("/")
     if len(pathname) <= 1:
         raise PreventUpdate
-    elif not pathname[1]:
+    elif not pathname[2]:
         return choice(DEFAULT_CHEMSYS)
     else:
-        return pathname[1]
+        return pathname[2]
 
 
 @app.callback(

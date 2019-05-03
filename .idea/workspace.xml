@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d460c97-0760-4488-83a5-4644cb660c3b" name="Default Changelist" comment="Added caching support, subscripts on formulas, E above hull data, and overall improved usability.">
-      <change afterPath="$PROJECT_DIR$/synthesis_app/components/search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/synth-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/synth-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crystal_toolkit/mpid_cache.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crystal_toolkit/tag_cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/00cf94d5e4d32198b1dad4a48ad886dc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/01581c8bea9d3d36f003d6353d0bbfb4" beforeDir="false" />
@@ -39,7 +38,7 @@
       <change beforePath="$PROJECT_DIR$/cache-directory/1f472d0fbff492ca4592af52d5c8f49a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/2009efe6b9d593191e9860cd2e840da0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/201a251154290063dbfaf4919db95077" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache-directory/2029240f6d1128be89ddc32729463129" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/2029240f6d1128be89ddc32729463129" beforeDir="false" afterPath="$PROJECT_DIR$/cache-directory/2029240f6d1128be89ddc32729463129" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/20a1c5d345675a697fd7dabc0d0470f5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/218c1e3c106eb0ef7f420b204bb9798e" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/228f1268579d77465cf537fd763eb912" beforeDir="false" />
@@ -59,7 +58,7 @@
       <change beforePath="$PROJECT_DIR$/cache-directory/353e7285427a40015e6e8f2672bf54d9" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/3676ba0b10bcd59cfa3a1c402613f476" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/36e40220f45b2833758100a5436a7dc4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache-directory/394955167d17921850a2700350ff4472" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/394955167d17921850a2700350ff4472" beforeDir="false" afterPath="$PROJECT_DIR$/cache-directory/394955167d17921850a2700350ff4472" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/3a2cdc8a94ec5f761128ca73b9e651ee" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/3a7d3c7682cca7fc6522378942131371" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/3abefe7884e695965f1a24863324fa17" beforeDir="false" />
@@ -111,7 +110,7 @@
       <change beforePath="$PROJECT_DIR$/cache-directory/5bf74577e07a35b97de8b40f49fb08c7" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/5c4ba9f59ee954c408141fe5f7fa93ab" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/5de71d447d0a81100d5544d341a9a23d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache-directory/5dee8cc7a1a8091be3c762ac95ad64dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/5dee8cc7a1a8091be3c762ac95ad64dc" beforeDir="false" afterPath="$PROJECT_DIR$/cache-directory/5dee8cc7a1a8091be3c762ac95ad64dc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/60ac4d186f491a33a06aa20721b99379" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/68d207f75ec8da60bad9179cdb3dd1d0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/69ec4029d80d1f530f935e205752bbc5" beforeDir="false" />
@@ -217,7 +216,7 @@
       <change beforePath="$PROJECT_DIR$/cache-directory/e3b41328c954e05164ecbb523fa790b7" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/e3e7ee6ee9d06acb64117de5cb471660" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/e4a21d1cfd16ced0d51c23d9d8acafb8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache-directory/e4cf1625b1e6550b340b1c05387425ef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache-directory/e4cf1625b1e6550b340b1c05387425ef" beforeDir="false" afterPath="$PROJECT_DIR$/cache-directory/e4cf1625b1e6550b340b1c05387425ef" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/e59f1c870d12d1b8023454ec5a98f751" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/e5ce342cfa502621c903c5531ac727a7" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/e6201ccfcf707f09f43e7993884f7e7d" beforeDir="false" />
@@ -251,9 +250,6 @@
       <change beforePath="$PROJECT_DIR$/cache-directory/ff690b50ca56aa9e502986a23b62568a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache-directory/ff8420567a208c040dbffd4b19504e68" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synthesis_app/layout/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/synthesis_app/components/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synthesis_app/layout/plot_functions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synthesis_app/layout/plot_layouts.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -316,44 +312,48 @@
     <session id="419012071">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Dockerfile" value="2" />
           <entry key="Procfile" value="2" />
           <entry key="gitignore" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="11" />
-          <entry key="txt" value="3" />
+          <entry key="py" value="15" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="11" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Python" value="15" />
+          <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Dockerfile" value="70" />
           <entry key="md" value="664" />
-          <entry key="py" value="5513" />
-          <entry key="txt" value="4" />
+          <entry key="py" value="5668" />
+          <entry key="txt" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="664" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="5513" />
+          <entry key="PLAIN_TEXT" value="101" />
+          <entry key="Python" value="5668" />
+          <entry key="Scratch" value="19" />
         </counts>
       </usages-collector>
     </session>
@@ -363,24 +363,38 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="343" column="15" lean-forward="true" selection-start-line="343" selection-start-column="15" selection-end-line="343" selection-end-column="15" />
+            <state relative-caret-position="142">
+              <caret line="318" lean-forward="true" selection-start-line="318" selection-end-line="318" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1555560364042" expanded="true" signature="10258:10259" ph="..." />
-                <marker date="1555560364042" expanded="true" signature="10470:10471" ph="..." />
-                <marker date="1555560364042" expanded="true" signature="11554:11555" ph="..." />
-                <marker date="1555560364042" expanded="true" signature="11692:11693" ph="..." />
+                <marker date="1556564668625" expanded="true" signature="10562:10563" ph="..." />
+                <marker date="1556564668625" expanded="true" signature="10774:10775" ph="..." />
+                <marker date="1556564668625" expanded="true" signature="11858:11859" ph="..." />
+                <marker date="1556564668625" expanded="true" signature="11996:11997" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
+        <entry file="file://$PROJECT_DIR$/crystal_toolkit/components/structure.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
+            <state relative-caret-position="-2896">
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crystal_toolkit/components/search.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="178" column="25" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -388,8 +402,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/synthesis_app/components/search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-604">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="72">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <marker date="1555560246371" expanded="true" signature="497:498" ph="..." />
@@ -411,10 +425,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+            <state relative-caret-position="378">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -454,6 +477,13 @@
       <find>MPCo</find>
       <find>input</find>
       <find>phased</find>
+      <find>chemsys</find>
+      <find>chem</find>
+      <find>pd-ent</find>
+      <find>tag_c</find>
+      <find>debug</find>
+      <find>get_str</find>
+      <find>mprester</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -469,21 +499,24 @@
         <option value="$PROJECT_DIR$/synth_app/.gitignore" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/synth_app/layout/plot_functions.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/LICENSE.txt" />
         <option value="$PROJECT_DIR$/synthesis_app/search.py" />
         <option value="$PROJECT_DIR$/synthesis_app/components/search.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="195" />
-    <option name="y" value="32" />
-    <option name="width" value="1276" />
-    <option name="height" value="956" />
+    <option name="x" value="509" />
+    <option name="y" value="55" />
+    <option name="width" value="1069" />
+    <option name="height" value="952" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -497,6 +530,17 @@
               <item name="synthesis-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="synthesis-app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="synthesis-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="synthesis-app" type="462c0819:PsiDirectoryNode" />
+              <item name="crystal_toolkit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="synthesis-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="synthesis-app" type="462c0819:PsiDirectoryNode" />
+              <item name="crystal_toolkit" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -504,17 +548,19 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT&#10;Python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/synthesis_app/components" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/synth_app" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/crystal_toolkit" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/synthesis_app/components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -558,27 +604,45 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="195" y="32" width="1276" height="956" extended-state="0" />
-    <editor active="true" />
+    <frame x="640" y="55" width="1069" height="952" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22948207" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27480915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298611" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.51915854" visible="true" weight="0.30092594" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.51915854" visible="true" weight="0.39418605" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48084146" side_tool="true" weight="0.30490655" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3287827" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2074928" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298611" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.51915854" visible="true" weight="0.39418605" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48084146" side_tool="true" weight="0.30490655" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3287827" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -599,13 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -636,27 +693,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/synthesis_app/layout/plot_layouts.py">
+    <entry file="file://$PROJECT_DIR$/synthesis_app/layout/plot_layouts.py" />
+    <entry file="file://$PROJECT_DIR$/synthesis_app/layout/plot_functions.py" />
+    <entry file="file://$PROJECT_DIR$/synthesis_app/layout/__init__.py" />
+    <entry file="file://$USER_HOME$/miniconda3/envs/synth/lib/python3.7/site-packages/pymatgen/analysis/local_env.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2224" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/synthesis_app/layout/plot_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="35352">
+          <caret line="3492" column="25" selection-start-line="3492" selection-start-column="25" selection-end-line="3492" selection-end-column="25" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/synthesis_app/layout/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="4" selection-start-line="4" selection-end-line="28" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ctk/Dockerfile" />
+    <entry file="file://$PROJECT_DIR$/src/synthesisapp/app.py" />
+    <entry file="file://$PROJECT_DIR$/src/pip-delete-this-directory.txt" />
+    <entry file="file://$PROJECT_DIR$/synthesis_app/components/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1555560246371" expanded="true" signature="497:498" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -670,21 +748,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/synthesis_app/components/search.py">
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-604">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1555560246371" expanded="true" signature="497:498" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        <state relative-caret-position="36">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -695,16 +762,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="343" column="15" lean-forward="true" selection-start-line="343" selection-start-column="15" selection-end-line="343" selection-end-column="15" />
+        <state relative-caret-position="378">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crystal_toolkit/components/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="178" column="25" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crystal_toolkit/components/structure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2896">
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1555560364042" expanded="true" signature="10258:10259" ph="..." />
-            <marker date="1555560364042" expanded="true" signature="10470:10471" ph="..." />
-            <marker date="1555560364042" expanded="true" signature="11554:11555" ph="..." />
-            <marker date="1555560364042" expanded="true" signature="11692:11693" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="318" lean-forward="true" selection-start-line="318" selection-end-line="318" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1556564668625" expanded="true" signature="10562:10563" ph="..." />
+            <marker date="1556564668625" expanded="true" signature="10774:10775" ph="..." />
+            <marker date="1556564668625" expanded="true" signature="11858:11859" ph="..." />
+            <marker date="1556564668625" expanded="true" signature="11996:11997" ph="..." />
           </folding>
         </state>
       </provider>
